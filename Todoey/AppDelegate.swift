@@ -18,10 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         print(Realm.Configuration.defaultConfiguration.fileURL)
-        
-//        let data = Data()
-//        data.name = "Angela"
-//        data.age = 12
+ 
+        //        let data = Data()
+        //        data.name = "Angela"
+        //        data.age = 12
         
         do {
             let realm = try Realm()
@@ -31,8 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             print ("Error initializing new realm, \(error)")
         }
-        
-        
         
         return true
     }

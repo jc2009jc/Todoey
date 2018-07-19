@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //        data.age = 12
         
         do {
-            let realm = try Realm()
+            let _ = try Realm()
 //            try realm.write {
 //                realm.add(data)
 //            }
